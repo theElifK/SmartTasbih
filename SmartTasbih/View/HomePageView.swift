@@ -17,9 +17,9 @@ struct HomePageView: View {
         VStack {
             // Üstte segment kontrol
             Picker("", selection: $selectedTab) {
-                ForEach(0..<tabs.count) { index in
-                    Text(tabs[index]).tag(index)
-                }
+                ForEach(tabs.indices, id: \.self) { index in
+                      Text(tabs[index]).tag(index)
+                  }
             }
             .pickerStyle(.segmented)
             .padding(16)
