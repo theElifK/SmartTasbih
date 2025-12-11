@@ -60,7 +60,7 @@ struct AddTasbihView: View {
                             .font(.system(size: 20,weight: .semibold))
                             .foregroundColor(.gray)
                         Text(vm.name.isEmpty ? "Tesbih İsmi" : vm.name)
-                            .font(.system(size: 22,weight: .semibold))
+                            .font(.system(size: 18,weight: .semibold))
                             .foregroundColor(.black)
                         HStack{
                             Text("0")
